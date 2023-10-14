@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito:wght@300&display=swap" rel="stylesheet" />
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/07a0077915.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="logo1.png" class="logo" />
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="sanss.pdf">Resume</a></li>
+          <li><a href="mailto: sanskritiverma03@gmail.com">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Software Developer</p>
+        <h1>
+          Hi, I am <span>Sanskriti</span><br />
+          passionate in <span id="element"></span>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!-- about -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="Me.jpg" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-tittle">About Me</h1>
+          <p>
+            An organized and
+            meticulous fourth-year EC student and an enthusiast
+            seeking an Entrylevel
+            position in the field of
+            Software Engineering and
+            management. Looking
+            forward to enhancing my
+            technical knowledge with
+            a reputed firm driven by
+            technology.
+          </p>
+
+          <div class="tab-tittles">
+            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          </div>
+
+          <div class="tab-contents active-tabs" id="education">
+            <ul>
+              <li>
+                <span>Carmel Convent School, Bhopal(CBSE)</span><br />10th:
+                93%
+              </li>
+              <li>
+                <span>Carmel Convent School, Bhopal(CBSE)</span><br />12th:
+                91%
+              </li>
+              <li>
+                <span>Lakshmi Narain College of Technology</span><br />B.Tech
+                in Electronics and Communication | CGPA: 9.01
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="skills">
+            <ul>
+              <li><span>Laungage : C/C++ </span></li>
+              <li><span>OOPS | Data Structures and Algorithms</span></li>
+              <li><span> Database: DBMS, MySQL </span></li>
+              <li><span> OS | Networking </span></li>
+              <li>
+                <span> Tools: Git, MS-Office, VS Code, Android Stdio </span>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>HR at We Care</span><br />As an NGO HR professional,
+                I've overseen 100+ applications, led initiatives, employing
+                agile project management and email marketing, for a
+                substantial increase in volunteers. <br />Improved data
+                administration while coordinating and empowering volunteers
+                for NGO's impact. Overhauled strategy, delivering substantial
+                improvements. <br />
+                Leveraged NGO's reach and impact by coordinating and
+                empowering volunteers effectively.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------services------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-tittle">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+
+          <h2>Software Engineer</h2>
+          <p>
+            As a software engineer, I specialize in crafting custom solutions
+            to address your unique digital requirements, ensuring quality and
+            efficiency every step of the way. My expertise is at your service
+            for a seamless digital transformation.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>HR and Management</h2>
+          <p>As an NGO HR professional, I've overseen 100+ applications,
+            handling end-to-end HR from talent acquisition to engagement,
+            adept at spotting like-minded candidates devoted to our cause.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Android Developer</h2>
+          <p>
+            As a student, I am passionate about Android development, and I'm
+            dedicated to crafting user-friendly and engaging mobile apps that
+            align with your business objectives.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------------portfolio---------------------- -->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-tittle">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="MedPlus_LOGO.jpg" />
+          <div class="layer">
+            <h3>Medical App</h3>
+            <p>
+              A secure Java/XML app, using REST APIs for real-time data via
+              token-authenticated Login/Register. Uses Fire Base for scalable
+              management of the data, and SQL-Lite for the backend operations.
+            </p>
+            <a href="https://github.com/SanskritiVerma03/MedPlus.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="Titbits_logo.jpg" />
+          <div class="layer">
+            <h3>Tit-Bits (News App)</h3>
+            <p>
+              Delivers diverse news from various sources using Java and XML.
+              Users can explore news by category, search topics, and stay
+              updated with a real-time news API.
+            </p>
+            <a href="https://github.com/SanskritiVerma03/Titbits-news-application-.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="HotelManagement_LOGO.jpg" />
+          <div class="layer">
+            <h3>Hotel Management Project</h3>
+            <p>
+              A C++, OOPS project with menu-based choices, incorporating
+              classes and functions.
+            </p>
+            <a href="https://github.com/SanskritiVerma03/Hotel-Management-System.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (var tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (var tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tabs");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tabs");
+    }
+  </script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+      var typed = new Typed('#element', {
+          strings: ['Management,','Software Development,','Android Development.'],
+          typeSpeed: 50,
+      });
+  </script>
+</body>
+
+</html>
